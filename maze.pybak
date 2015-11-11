@@ -33,6 +33,8 @@ class Maze(object):
       return white
     if distance(c,blue) < 150: 
       return blue
+    if distance(c,red) < 150: 
+      return red
     if distance(c,green) < 150: 
       return green
     return blue
@@ -58,7 +60,10 @@ class Maze(object):
     
   def forwardWithDraw(self,t,d):
     for i in range(d):
-      x=getXPos(t); y=getYPos(t); addOvalFilled(self.image,x-10,y-10,20,20,green)
+      if self.colorInFront()==green:
+        x=getXPos(t); y=getYPos(t); addOvalFilled(self.image,x-10,y-10,20,20,red)
+      else:      
+        x=getXPos(t); y=getYPos(t); addOvalFilled(self.image,x-10,y-10,20,20,green)
       forward(t,1)
     
 # tests
@@ -119,5 +124,16 @@ if true:
   assert getYPos(m.t)==190
   assert m.colorInFront() == white
   assert getHeading(m.t)==90
+  
+  m.travel2BranchOrWall() # makes a green trail
+  m.t.setHeading(270)
+  m.forwardWithDraw(m.t,40) # makes a red trail
+  m.t.setHeading(90)
+  assert m.colorInFront() == red
+  
+  m.reset()
+  moveTo(m.t,390,160) # put the turtle next to the gold
+  m.t.setHeading(180)
+  assert m.solve()
   
   

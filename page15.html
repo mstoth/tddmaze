@@ -14,19 +14,27 @@ Page 15<br>
 <table style="text-align: left; width: 100%;" border="1" cellpadding="8" cellspacing="2">
   <tbody>
     <tr>
-      <td>The reset function is a duplicate of what we are doing in __init__.&nbsp; Let's do some refactoring. <br>
+      <td>The reset function is a duplicate of what we are doing in
+__init__.&nbsp; Let's do some refactoring. <br>
       </td>
-      <td style="background-color: rgb(102, 255, 153);"><img style="width: 435px; height: 130px;" alt="" src="file:///Users/michaeltoth/Documents/tddmaze/page15code.png"><br>
+      <td style="background-color: rgb(102, 255, 153);"><img style="width: 435px; height: 130px;" alt="" src="page15code.png"><br>
       </td>
     </tr>
     <tr>
-      <td>Now
-with the call to reset in __init__ we no longer have as much
-duplication. Duplication is one trigger for refactoring. At this point,
-we still have our tests passing even after the refactoring. <br>
+      <td>Now with the call to reset in __init__ we no longer have as
+much duplication. Duplication is one trigger for refactoring. At this
+point, we still have our tests passing even after the refactoring. <br>
       </td>
-      <td style="background-color: rgb(255, 255, 51);"><img style="width: 746px; height: 238px;" alt="" src="file:///Users/michaeltoth/Documents/tddmaze/page15refactor.png"><br>
+      <td style="background-color: rgb(255, 255, 51);"><img style="width: 746px; height: 238px;" alt="" src="page15refactor.png"><br>
       </td>
+    </tr>
+    <tr>
+        <td>We
+want the trail to turn to red after green to indicate that it is not a
+solution path when we backtrack.&nbsp; Here's a test for that. <br>
+</td>
+        <td style="background-color: rgb(255, 102, 102);"><img style="width: 543px; height: 128px;" alt="" src="page15failure.png"><br>
+</td>
     </tr>
   </tbody>
 </table>
