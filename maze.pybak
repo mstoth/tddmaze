@@ -35,6 +35,8 @@ class Maze(object):
       return blue
     if distance(c,red) < 150: 
       return red
+    if distance(c,yellow) < 150: 
+      return yellow
     if distance(c,green) < 150: 
       return green
     return blue
@@ -65,6 +67,13 @@ class Maze(object):
       else:      
         x=getXPos(t); y=getYPos(t); addOvalFilled(self.image,x-10,y-10,20,20,green)
       forward(t,1)
+      
+  def solve(self):
+    if self.colorInFront()==yellow:
+      return True
+    else:
+      return False
+      
     
 # tests
 if true:
@@ -132,7 +141,7 @@ if true:
   assert m.colorInFront() == red
   
   m.reset()
-  moveTo(m.t,390,160) # put the turtle next to the gold
+  moveTo(m.t,390,150) # put the turtle next to the gold
   m.t.setHeading(180)
   assert m.solve()
   
