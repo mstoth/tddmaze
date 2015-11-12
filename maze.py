@@ -72,6 +72,9 @@ class Maze(object):
     if self.colorInFront()==yellow:
       return True
     else:
+      if self.colorInFront() == white: 
+        self.travel2BranchOrWall()
+        return self.solve()
       return False
       
     
@@ -143,6 +146,16 @@ if true:
   m.reset()
   moveTo(m.t,390,150) # put the turtle next to the gold
   m.t.setHeading(180)
+  assert m.solve()
+  
+  m.reset()
+  moveTo(m.t,390,120) # put the turtle farther from the gold
+  m.t.setHeading(180)
+  assert m.solve()
+  
+  m.reset()
+  moveTo(m.t,390,120) # put the turtle farther from the gold
+  m.t.setHeading(90)  # face a wall
   assert m.solve()
   
   
