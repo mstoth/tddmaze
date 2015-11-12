@@ -51,13 +51,16 @@ class Maze(object):
       turn(self.t,90) 
       if r==white or l==white:
         if starting:
-          starting = false
+          starting=false
           self.forwardWithDraw(self.t,10)
         else:
-          while getXPos(self.t)%10 or getYPos(self.t)%10:
+          starting=false
+          while getXPos(self.t)%10!=0 or getYPos(self.t)%10!=0:
             self.forwardWithDraw(self.t,1)
           return
-      self.forwardWithDraw(self.t,1)
+      else:
+        starting = false
+        self.forwardWithDraw(self.t,1)
     self.forwardWithDraw(self.t,11)
     
   def forwardWithDraw(self,t,d):
@@ -173,4 +176,34 @@ if true:
   assert m.solve()
   
   
+  m.reset()
+  moveTo(m.t,390,30) # put the turtle on the last path
+  m.t.setHeading(180)  # face south
+  # m.travel2BranchOrWall()
+  # assert m.solve()
+  foundBranch=false
+  while not foundBranch and (m.colorInFront() == white or self.colorInFront() == green):
+    turn(m.t,90)
+    r=m.colorInFront()
+    turn(m.t,180)
+    l=m.colorInFront()
+    turn(m.t,90) 
+    if r==white or l==white:
+      foundBranch=true
+      while getXPos(m.t)%10!=0 or getYPos(m.t)%10!=0:
+        m.forwardWithDraw(m.t,1)
+    else:
+      m.forwardWithDraw(m.t,1)
+  printNow(m.t.getYPos())
   
+  
+  m.reset()
+  moveTo(m.t,390,30) # put the turtle on the last path
+  m.t.setHeading(180)  # face south
+  assert m.solve()
+  
+  
+  m.reset()
+  moveTo(m.t,350,30) # put the turtle on the last path
+  m.t.setHeading(180)  # face south
+  assert m.solve()
