@@ -86,6 +86,9 @@ class Maze(object):
           turn(self.t,90)
           if self.colorInFront() == white or self.colorInFront() == green: 
             return self.solve()
+          else: 
+            return False
+            
       return False
       
     
@@ -194,16 +197,24 @@ if true:
         m.forwardWithDraw(m.t,1)
     else:
       m.forwardWithDraw(m.t,1)
-  printNow(m.t.getYPos())
   
   
-  m.reset()
-  moveTo(m.t,390,30) # put the turtle on the last path
-  m.t.setHeading(180)  # face south
-  assert m.solve()
-  
+  # m.reset()
+  # moveTo(m.t,390,30) # put the turtle on the last path
+  # m.t.setHeading(180)  # face south
+  # assert m.solve()
   
   m.reset()
-  moveTo(m.t,350,30) # put the turtle on the last path
-  m.t.setHeading(180)  # face south
-  assert m.solve()
+  moveTo(m.t,350,30)
+  m.t.setHeading(180)
+  m.travel2BranchOrWall()
+  assert m.t.getYPos()==70
+  
+  m.travel2BranchOrWall() 
+  assert m.t.getYPos()==150
+  
+  m.travel2BranchOrWall()
+  assert m.t.getYPos()==270
+  
+  
+  

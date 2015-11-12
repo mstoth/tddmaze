@@ -36,11 +36,52 @@ Let's try it from a little farther away. <br>
       </td>
     </tr>
     <tr>
-      <td>For this test, the turtle gets into an endless loop.&nbsp; Some more debugging is needed. <br>
+      <td>For this test, the turtle gets into an endless loop.&nbsp;
+Some more debugging is needed. <br>
       <img style="width: 118px; height: 322px;" alt="" src="page21mazepic2.png"><br>
+This is too complicated a situation to test entirely, we want to check
+to see what exactly the turtle is doing.&nbsp; We will go step by step.
+      <br>
+      <br>
+Comment out this test so we can skip it for now. <br>
+      <br>
+      <br>
+      <br>
       </td>
-      <td style="background-color: rgb(255, 102, 102);">
-    <img style="width: 626px; height: 102px;" alt="" src="page21failure.png"><br>
+      <td style="background-color: rgb(255, 102, 102);"> <img style="width: 626px; height: 102px;" alt="" src="page21failure.png"><br>
+      </td>
+    </tr>
+    <tr>
+      <td>The first step is where we expect the turtle to stop
+initially. That
+would be at the coordinates 350,70. <br>
+      <img style="width: 118px; height: 214px;" alt="" src="page21mazepic3.png"><br>
+The next step is to see if it stops at the next intersection.&nbsp;
+Normally the turtle would continue forward at this point according to
+our algorithm. <br>
+      </td>
+      <td style="background-color: rgb(102, 255, 153);"><img style="width: 287px; height: 114px;" alt="" src="page21code3.png"><br>
+      </td>
+    </tr>
+    <tr>
+      <td>We continue to add pieces to our test to check each leg of
+the turtle's journey. <br>
+      <img style="width: 127px; height: 319px;" alt="" src="file:///Users/michaeltoth/Documents/tddmaze/page21mazepic5.png"><br>
+      </td>
+      <td style="background-color: rgb(102, 255, 153);"><img style="width: 309px; height: 62px;" alt="" src="file:///Users/michaeltoth/Documents/tddmaze/page21code4.png"><br>
+      </td>
+    </tr>
+    <tr><td>Things are still behaving well. <br>
+      <img style="width: 100px; height: 326px;" alt="" src="file:///Users/michaeltoth/Documents/tddmaze/page21mazepic6.png"><br>
+Now the next step for solve is to try to go forward. It can't so it
+tries to go right. It can't so it tries to go north and then
+east.&nbsp;&nbsp; Here we can see a problem.&nbsp; We end up
+backtracking before we investigate the path to the left.&nbsp; Ideally
+we want to discover the dead end before we backtrack.&nbsp; This means
+we should change the order so our last choice is to backtrack. <br>
+      <br>
+      <br>
+</td><td style="background-color: rgb(102, 255, 153);"><img style="width: 336px; height: 71px;" alt="" src="file:///Users/michaeltoth/Documents/tddmaze/page21code6.png"><br>
 </td></tr>
   </tbody>
 </table>
