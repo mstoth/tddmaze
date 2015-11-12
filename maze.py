@@ -43,7 +43,7 @@ class Maze(object):
     
   def travel2BranchOrWall(self):
     starting = true
-    while self.colorInFront() == white:
+    while self.colorInFront() == white or self.colorInFront() == green:
       turn(self.t,90)
       r=self.colorInFront()
       turn(self.t,180)
@@ -72,9 +72,17 @@ class Maze(object):
     if self.colorInFront()==yellow:
       return True
     else:
-      if self.colorInFront() == white: 
+      if self.colorInFront() == white or self.colorInFront() == green: 
         self.travel2BranchOrWall()
         return self.solve()
+      else:
+        turn(self.t,90)
+        if self.colorInFront() == white or self.colorInFront() == green: 
+          return self.solve()
+        else:
+          turn(self.t,90)
+          if self.colorInFront() == white or self.colorInFront() == green: 
+            return self.solve()
       return False
       
     
@@ -156,6 +164,12 @@ if true:
   m.reset()
   moveTo(m.t,390,120) # put the turtle farther from the gold
   m.t.setHeading(90)  # face a wall
+  assert m.solve()
+  
+  
+  m.reset()
+  moveTo(m.t,390,120) # put the turtle farther from the gold
+  m.t.setHeading(0)  # face north
   assert m.solve()
   
   
