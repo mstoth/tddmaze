@@ -572,4 +572,252 @@
 <menu_button time="Thu Nov 12 14:57:50 EST 2015">Load Program</menu_button>
 <menu_button time="Thu Nov 12 15:01:50 EST 2015">Load Program</menu_button>
 <file_saved time="Thu Nov 12 15:01:52 EST 2015">/Users/michaeltoth/Documents/tddmaze/maze.py</file_saved>
+<file_opened time="Fri Nov 13 09:55:35 EST 2015">/Users/michaeltoth/Documents/tddmaze/maze.py</file_opened>
+<menu_button time="Fri Nov 13 09:55:37 EST 2015">Load Program</menu_button>
+<command_run time="Fri Nov 13 09:56:21 EST 2015">explore m.image></command_run>
+<command_run time="Fri Nov 13 09:56:26 EST 2015">explore(m.image)></command_run>
+<menu_button time="Fri Nov 13 09:57:07 EST 2015">Save Program</menu_button>
+<file_saved time="Fri Nov 13 09:57:07 EST 2015">/Users/michaeltoth/Documents/tddmaze/maze.py</file_saved>
+</file_created>
+<menu_button time="Fri Nov 13 09:57:08 EST 2015">Load Program</menu_button>
+<menu_button time="Fri Nov 13 09:57:15 EST 2015">Stop</menu_button>
+<menu_button time="Fri Nov 13 09:58:51 EST 2015">Load Program</menu_button>
+<file_saved time="Fri Nov 13 09:58:52 EST 2015">/Users/michaeltoth/Documents/tddmaze/maze.py</file_saved>
+</file_created>
+<menu_button time="Fri Nov 13 10:10:09 EST 2015">Load Program</menu_button>
+<file_saved time="Fri Nov 13 10:10:10 EST 2015">/Users/michaeltoth/Documents/tddmaze/maze.py</file_saved>
+</file_created>
+<menu_button time="Fri Nov 13 10:16:14 EST 2015">Load Program</menu_button>
+<file_saved time="Fri Nov 13 10:16:15 EST 2015">/Users/michaeltoth/Documents/tddmaze/maze.py</file_saved>
+</file_created>
+<command_run time="Fri Nov 13 10:16:56 EST 2015">getHeading(m.t)></command_run>
+<menu_button time="Fri Nov 13 10:17:35 EST 2015">Load Program</menu_button>
+<file_saved time="Fri Nov 13 10:17:36 EST 2015">/Users/michaeltoth/Documents/tddmaze/maze.py</file_saved>
+</file_created>
+<command_run time="Fri Nov 13 10:18:04 EST 2015">getHeading(m.t)></command_run>
+<menu_button time="Fri Nov 13 11:00:02 EST 2015">Load Program</menu_button>
+<menu_button time="Fri Nov 13 11:03:57 EST 2015">Load Program</menu_button>
+<file_saved time="Fri Nov 13 11:03:58 EST 2015">/Users/michaeltoth/Documents/tddmaze/maze.py</file_saved>
+</file_created>
+<command_run time="Fri Nov 13 11:08:28 EST 2015">m.reset()></command_run>
+<command_run time="Fri Nov 13 11:08:38 EST 2015">moveTo(m.t,390,30)></command_run>
+<command_run time="Fri Nov 13 11:08:57 EST 2015">m.t.setHeading(180)></command_run>
+<command_run time="Fri Nov 13 11:09:16 EST 2015">foundBranch=false></command_run>
+<command_run time="Fri Nov 13 11:09:26 EST 2015">m.colorInFront()></command_run>
+<command_run time="Fri Nov 13 11:11:08 EST 2015">m.forwardWithDraw(m.t,1)></command_run>
+<command_run time="Fri Nov 13 11:11:17 EST 2015">m.colorInFront()></command_run>
+<command_run time="Fri Nov 13 11:12:13 EST 2015">m.forwardWithDraw(m.t,1)></command_run>
+<command_run time="Fri Nov 13 11:12:16 EST 2015">m.colorInFront()></command_run>
+<command_run time="Fri Nov 13 11:12:18 EST 2015">m.forwardWithDraw(m.t,1)></command_run>
+<command_run time="Fri Nov 13 11:12:20 EST 2015">m.colorInFront()></command_run>
+<command_run time="Fri Nov 13 11:12:21 EST 2015">m.forwardWithDraw(m.t,1)></command_run>
+<command_run time="Fri Nov 13 11:12:23 EST 2015">m.forwardWithDraw(m.t,1)></command_run>
+<command_run time="Fri Nov 13 11:12:24 EST 2015">m.forwardWithDraw(m.t,1)></command_run>
+<command_run time="Fri Nov 13 11:12:24 EST 2015">m.forwardWithDraw(m.t,1)></command_run>
+<command_run time="Fri Nov 13 11:12:24 EST 2015">m.forwardWithDraw(m.t,1)></command_run>
+<command_run time="Fri Nov 13 11:12:25 EST 2015">m.forwardWithDraw(m.t,1)></command_run>
+<command_run time="Fri Nov 13 11:12:25 EST 2015">m.forwardWithDraw(m.t,1)></command_run>
+<command_run time="Fri Nov 13 11:12:25 EST 2015">m.forwardWithDraw(m.t,1)></command_run>
+<command_run time="Fri Nov 13 11:12:26 EST 2015">m.forwardWithDraw(m.t,1)></command_run>
+<command_run time="Fri Nov 13 11:12:26 EST 2015">m.forwardWithDraw(m.t,1)></command_run>
+<command_run time="Fri Nov 13 11:12:26 EST 2015">m.forwardWithDraw(m.t,1)></command_run>
+<command_run time="Fri Nov 13 11:12:27 EST 2015">m.forwardWithDraw(m.t,1)></command_run>
+<command_run time="Fri Nov 13 11:12:27 EST 2015">m.forwardWithDraw(m.t,1)></command_run>
+<command_run time="Fri Nov 13 11:12:27 EST 2015">m.forwardWithDraw(m.t,1)></command_run>
+<command_run time="Fri Nov 13 11:12:28 EST 2015">m.forwardWithDraw(m.t,1)></command_run>
+<command_run time="Fri Nov 13 11:12:28 EST 2015">m.forwardWithDraw(m.t,1)></command_run>
+<command_run time="Fri Nov 13 11:12:28 EST 2015">m.forwardWithDraw(m.t,1)></command_run>
+<command_run time="Fri Nov 13 11:12:29 EST 2015">m.forwardWithDraw(m.t,1)></command_run>
+<command_run time="Fri Nov 13 11:12:29 EST 2015">m.forwardWithDraw(m.t,1)></command_run>
+<command_run time="Fri Nov 13 11:12:29 EST 2015">m.forwardWithDraw(m.t,1)></command_run>
+<command_run time="Fri Nov 13 11:12:30 EST 2015">m.forwardWithDraw(m.t,1)></command_run>
+<command_run time="Fri Nov 13 11:12:30 EST 2015">m.forwardWithDraw(m.t,1)></command_run>
+<command_run time="Fri Nov 13 11:12:30 EST 2015">m.forwardWithDraw(m.t,1)></command_run>
+<command_run time="Fri Nov 13 11:12:31 EST 2015">m.forwardWithDraw(m.t,1)></command_run>
+<command_run time="Fri Nov 13 11:12:39 EST 2015">turn(m.t,90)></command_run>
+<command_run time="Fri Nov 13 11:12:44 EST 2015">m.colorInFront()></command_run>
+<command_run time="Fri Nov 13 11:12:53 EST 2015">turn(m.t,-90)></command_run>
+<command_run time="Fri Nov 13 11:13:00 EST 2015">m.forwardWithDraw(m.t,1)></command_run>
+<command_run time="Fri Nov 13 11:13:05 EST 2015">turn(m.t,90)></command_run>
+<command_run time="Fri Nov 13 11:13:07 EST 2015">m.colorInFront()></command_run>
+<command_run time="Fri Nov 13 11:13:09 EST 2015">turn(m.t,-90)></command_run>
+<command_run time="Fri Nov 13 11:13:12 EST 2015">m.forwardWithDraw(m.t,1)></command_run>
+<command_run time="Fri Nov 13 11:13:15 EST 2015">turn(m.t,90)></command_run>
+<command_run time="Fri Nov 13 11:13:17 EST 2015">m.colorInFront()></command_run>
+<command_run time="Fri Nov 13 11:13:19 EST 2015">turn(m.t,-90)></command_run>
+<command_run time="Fri Nov 13 11:13:20 EST 2015">m.forwardWithDraw(m.t,1)></command_run>
+<command_run time="Fri Nov 13 11:13:24 EST 2015">turn(m.t,90)></command_run>
+<command_run time="Fri Nov 13 11:13:26 EST 2015">m.colorInFront()></command_run>
+<command_run time="Fri Nov 13 11:13:28 EST 2015">turn(m.t,-90)></command_run>
+<command_run time="Fri Nov 13 11:13:30 EST 2015">m.forwardWithDraw(m.t,1)></command_run>
+<command_run time="Fri Nov 13 11:13:32 EST 2015">turn(m.t,90)></command_run>
+<command_run time="Fri Nov 13 11:13:34 EST 2015">m.colorInFront()></command_run>
+<command_run time="Fri Nov 13 12:03:09 EST 2015">m.t.getXPos()></command_run>
+<command_run time="Fri Nov 13 12:03:12 EST 2015">m.t.getYPos()></command_run>
+<command_run time="Fri Nov 13 12:03:29 EST 2015">turn(m.t,-90)></command_run>
+<command_run time="Fri Nov 13 12:03:51 EST 2015">m.forwardWithDraw(m.t,9)></command_run>
+<menu_button time="Fri Nov 13 12:05:15 EST 2015">Save Program</menu_button>
+<file_saved time="Fri Nov 13 12:05:15 EST 2015">/Users/michaeltoth/Documents/tddmaze/maze.py</file_saved>
+</file_created>
+<menu_button time="Fri Nov 13 12:05:17 EST 2015">Load Program</menu_button>
+<command_run time="Fri Nov 13 12:06:12 EST 2015">explore(m.image)></command_run>
+<menu_button time="Fri Nov 13 12:06:35 EST 2015">Load Program</menu_button>
+<menu_button time="Fri Nov 13 12:07:21 EST 2015">Save Program</menu_button>
+<file_saved time="Fri Nov 13 12:07:21 EST 2015">/Users/michaeltoth/Documents/tddmaze/maze.py</file_saved>
+</file_created>
+<menu_button time="Fri Nov 13 12:07:22 EST 2015">Load Program</menu_button>
+<menu_button time="Fri Nov 13 12:07:44 EST 2015">Load Program</menu_button>
+<file_saved time="Fri Nov 13 12:07:45 EST 2015">/Users/michaeltoth/Documents/tddmaze/maze.py</file_saved>
+</file_created>
+<menu_button time="Fri Nov 13 12:08:05 EST 2015">Save Program</menu_button>
+<file_saved time="Fri Nov 13 12:08:05 EST 2015">/Users/michaeltoth/Documents/tddmaze/maze.py</file_saved>
+</file_created>
+<menu_button time="Fri Nov 13 12:08:06 EST 2015">Load Program</menu_button>
+<menu_button time="Fri Nov 13 12:08:18 EST 2015">Save Program</menu_button>
+<file_saved time="Fri Nov 13 12:08:18 EST 2015">/Users/michaeltoth/Documents/tddmaze/maze.py</file_saved>
+</file_created>
+<menu_button time="Fri Nov 13 12:08:18 EST 2015">Load Program</menu_button>
+<menu_button time="Fri Nov 13 12:08:51 EST 2015">Load Program</menu_button>
+<file_saved time="Fri Nov 13 12:08:53 EST 2015">/Users/michaeltoth/Documents/tddmaze/maze.py</file_saved>
+</file_created>
+<command_run time="Fri Nov 13 12:09:09 EST 2015">m.t.getYPos()></command_run>
+<menu_button time="Fri Nov 13 12:09:18 EST 2015">Save Program</menu_button>
+<file_saved time="Fri Nov 13 12:09:18 EST 2015">/Users/michaeltoth/Documents/tddmaze/maze.py</file_saved>
+</file_created>
+<menu_button time="Fri Nov 13 12:09:19 EST 2015">Load Program</menu_button>
+<menu_button time="Fri Nov 13 12:09:36 EST 2015">Save Program</menu_button>
+<file_saved time="Fri Nov 13 12:09:36 EST 2015">/Users/michaeltoth/Documents/tddmaze/maze.py</file_saved>
+</file_created>
+<menu_button time="Fri Nov 13 12:09:37 EST 2015">Load Program</menu_button>
+<menu_button time="Fri Nov 13 12:11:06 EST 2015">Load Program</menu_button>
+<file_saved time="Fri Nov 13 12:11:08 EST 2015">/Users/michaeltoth/Documents/tddmaze/maze.py</file_saved>
+</file_created>
+<menu_button time="Fri Nov 13 12:12:36 EST 2015">Load Program</menu_button>
+<file_saved time="Fri Nov 13 12:12:38 EST 2015">/Users/michaeltoth/Documents/tddmaze/maze.py</file_saved>
+</file_created>
+<menu_button time="Fri Nov 13 12:19:01 EST 2015">Load Program</menu_button>
+<file_saved time="Fri Nov 13 12:19:03 EST 2015">/Users/michaeltoth/Documents/tddmaze/maze.py</file_saved>
+</file_created>
+<menu_button time="Fri Nov 13 12:20:57 EST 2015">Save Program</menu_button>
+<file_saved time="Fri Nov 13 12:20:57 EST 2015">/Users/michaeltoth/Documents/tddmaze/maze.py</file_saved>
+</file_created>
+<menu_button time="Fri Nov 13 12:20:59 EST 2015">Load Program</menu_button>
+<menu_button time="Fri Nov 13 12:23:31 EST 2015">Load Program</menu_button>
+<file_saved time="Fri Nov 13 12:23:33 EST 2015">/Users/michaeltoth/Documents/tddmaze/maze.py</file_saved>
+</file_created>
+<command_run time="Fri Nov 13 12:23:54 EST 2015">print getXPos(m.t)></command_run>
+<menu_button time="Fri Nov 13 12:25:45 EST 2015">Load Program</menu_button>
+<file_saved time="Fri Nov 13 12:25:46 EST 2015">/Users/michaeltoth/Documents/tddmaze/maze.py</file_saved>
+</file_created>
+<menu_button time="Fri Nov 13 12:26:15 EST 2015">Load Program</menu_button>
+<file_saved time="Fri Nov 13 12:26:16 EST 2015">/Users/michaeltoth/Documents/tddmaze/maze.py</file_saved>
+</file_created>
+<command_run time="Fri Nov 13 12:26:30 EST 2015">getXPos(m.t)></command_run>
+<menu_button time="Fri Nov 13 12:27:02 EST 2015">Load Program</menu_button>
+<file_saved time="Fri Nov 13 12:27:03 EST 2015">/Users/michaeltoth/Documents/tddmaze/maze.py</file_saved>
+</file_created>
+<command_run time="Fri Nov 13 12:27:10 EST 2015">print getXPos(m.t)></command_run>
+<menu_button time="Fri Nov 13 13:20:08 EST 2015">Load Program</menu_button>
+<command_run time="Fri Nov 13 13:20:31 EST 2015">m.reset()></command_run>
+<command_run time="Fri Nov 13 13:20:37 EST 2015">m.travel2BranchOrWall()></command_run>
+<command_run time="Fri Nov 13 13:20:44 EST 2015">m.t.getXPos()></command_run>
+<command_run time="Fri Nov 13 13:21:21 EST 2015">m.colorInFront()></command_run>
+<command_run time="Fri Nov 13 13:22:03 EST 2015">backward(m.t,1)></command_run>
+<command_run time="Fri Nov 13 13:22:08 EST 2015">m.colorInFront()></command_run>
+<command_run time="Fri Nov 13 13:22:10 EST 2015">backward(m.t,1)></command_run>
+<command_run time="Fri Nov 13 13:22:12 EST 2015">m.colorInFront()></command_run>
+<command_run time="Fri Nov 13 13:22:26 EST 2015">forward(m.t,1)></command_run>
+<command_run time="Fri Nov 13 13:22:27 EST 2015">m.colorInFront()></command_run>
+<command_run time="Fri Nov 13 13:22:37 EST 2015">m.t.getXPos()></command_run>
+<menu_button time="Fri Nov 13 13:24:36 EST 2015">Load Program</menu_button>
+<file_saved time="Fri Nov 13 13:24:38 EST 2015">/Users/michaeltoth/Documents/tddmaze/maze.py</file_saved>
+</file_created>
+<command_run time="Fri Nov 13 13:24:46 EST 2015">m.reset()></command_run>
+<command_run time="Fri Nov 13 13:25:14 EST 2015">m.travel2BranchOrWall()></command_run>
+<menu_button time="Fri Nov 13 13:26:02 EST 2015">Save Program</menu_button>
+<file_saved time="Fri Nov 13 13:26:02 EST 2015">/Users/michaeltoth/Documents/tddmaze/maze.py</file_saved>
+</file_created>
+<menu_button time="Fri Nov 13 13:26:03 EST 2015">Load Program</menu_button>
+<menu_button time="Fri Nov 13 13:30:32 EST 2015">Save Program</menu_button>
+<file_saved time="Fri Nov 13 13:30:32 EST 2015">/Users/michaeltoth/Documents/tddmaze/maze.py</file_saved>
+</file_created>
+<menu_button time="Fri Nov 13 13:30:37 EST 2015">Load Program</menu_button>
+<file_saved time="Fri Nov 13 13:30:39 EST 2015">/Users/michaeltoth/Documents/tddmaze/maze.py</file_saved>
+</file_created>
+<command_run time="Fri Nov 13 13:31:19 EST 2015">turn(m.t,180)></command_run>
+<command_run time="Fri Nov 13 13:31:30 EST 2015">m.travel2BranchOrWall()></command_run>
+<command_run time="Fri Nov 13 13:31:48 EST 2015">m.t.getYPos()></command_run>
+<menu_button time="Fri Nov 13 13:33:48 EST 2015">Save Program</menu_button>
+<file_saved time="Fri Nov 13 13:33:48 EST 2015">/Users/michaeltoth/Documents/tddmaze/maze.py</file_saved>
+</file_created>
+<menu_button time="Fri Nov 13 13:33:49 EST 2015">Load Program</menu_button>
+<menu_button time="Fri Nov 13 13:34:27 EST 2015">Load Program</menu_button>
+<menu_button time="Fri Nov 13 13:34:41 EST 2015">Undo</menu_button>
+<menu_button time="Fri Nov 13 13:34:45 EST 2015">Load Program</menu_button>
+<file_saved time="Fri Nov 13 13:34:46 EST 2015">/Users/michaeltoth/Documents/tddmaze/maze.py</file_saved>
+</file_created>
+<menu_button time="Fri Nov 13 13:34:51 EST 2015">Undo</menu_button>
+<menu_button time="Fri Nov 13 13:34:52 EST 2015">Undo</menu_button>
+<menu_button time="Fri Nov 13 13:34:52 EST 2015">Undo</menu_button>
+<menu_button time="Fri Nov 13 13:34:53 EST 2015">Undo</menu_button>
+<menu_button time="Fri Nov 13 13:34:53 EST 2015">Undo</menu_button>
+<menu_button time="Fri Nov 13 13:34:54 EST 2015">Undo</menu_button>
+<menu_button time="Fri Nov 13 13:34:54 EST 2015">Undo</menu_button>
+<menu_button time="Fri Nov 13 13:34:55 EST 2015">Undo</menu_button>
+<menu_button time="Fri Nov 13 13:34:55 EST 2015">Undo</menu_button>
+<menu_button time="Fri Nov 13 13:34:55 EST 2015">Undo</menu_button>
+<menu_button time="Fri Nov 13 13:34:55 EST 2015">Undo</menu_button>
+<menu_button time="Fri Nov 13 13:34:56 EST 2015">Undo</menu_button>
+<menu_button time="Fri Nov 13 13:34:56 EST 2015">Undo</menu_button>
+<menu_button time="Fri Nov 13 13:34:56 EST 2015">Undo</menu_button>
+<menu_button time="Fri Nov 13 13:34:56 EST 2015">Undo</menu_button>
+<menu_button time="Fri Nov 13 13:34:56 EST 2015">Undo</menu_button>
+<menu_button time="Fri Nov 13 13:34:56 EST 2015">Undo</menu_button>
+<menu_button time="Fri Nov 13 13:34:56 EST 2015">Undo</menu_button>
+<menu_button time="Fri Nov 13 13:34:57 EST 2015">Undo</menu_button>
+<menu_button time="Fri Nov 13 13:34:57 EST 2015">Undo</menu_button>
+<menu_button time="Fri Nov 13 13:34:57 EST 2015">Undo</menu_button>
+<menu_button time="Fri Nov 13 13:34:57 EST 2015">Undo</menu_button>
+<menu_button time="Fri Nov 13 13:34:57 EST 2015">Undo</menu_button>
+<menu_button time="Fri Nov 13 13:34:57 EST 2015">Undo</menu_button>
+<menu_button time="Fri Nov 13 13:34:57 EST 2015">Undo</menu_button>
+<menu_button time="Fri Nov 13 13:34:57 EST 2015">Undo</menu_button>
+<menu_button time="Fri Nov 13 13:34:58 EST 2015">Undo</menu_button>
+<menu_button time="Fri Nov 13 13:34:58 EST 2015">Undo</menu_button>
+<menu_button time="Fri Nov 13 13:34:58 EST 2015">Undo</menu_button>
+<menu_button time="Fri Nov 13 13:35:00 EST 2015">Load Program</menu_button>
+<file_saved time="Fri Nov 13 13:35:02 EST 2015">/Users/michaeltoth/Documents/tddmaze/maze.py</file_saved>
+</file_created>
+<menu_button time="Fri Nov 13 13:38:08 EST 2015">Save Program</menu_button>
+<file_saved time="Fri Nov 13 13:38:08 EST 2015">/Users/michaeltoth/Documents/tddmaze/maze.py</file_saved>
+</file_created>
+<menu_button time="Fri Nov 13 13:38:09 EST 2015">Load Program</menu_button>
+<menu_button time="Fri Nov 13 13:38:37 EST 2015">Save Program</menu_button>
+<file_saved time="Fri Nov 13 13:38:37 EST 2015">/Users/michaeltoth/Documents/tddmaze/maze.py</file_saved>
+</file_created>
+<menu_button time="Fri Nov 13 13:38:38 EST 2015">Load Program</menu_button>
+<command_run time="Fri Nov 13 13:38:59 EST 2015">m.travel2BranchOrWall()></command_run>
+<menu_button time="Fri Nov 13 13:40:08 EST 2015">Load Program</menu_button>
+<file_saved time="Fri Nov 13 13:40:10 EST 2015">/Users/michaeltoth/Documents/tddmaze/maze.py</file_saved>
+</file_created>
+<menu_button time="Fri Nov 13 13:41:26 EST 2015">Save Program</menu_button>
+<file_saved time="Fri Nov 13 13:41:27 EST 2015">/Users/michaeltoth/Documents/tddmaze/maze.py</file_saved>
+</file_created>
+<menu_button time="Fri Nov 13 13:41:28 EST 2015">Load Program</menu_button>
+<menu_button time="Fri Nov 13 13:42:10 EST 2015">Load Program</menu_button>
+<menu_button time="Fri Nov 13 13:43:00 EST 2015">Load Program</menu_button>
+<file_saved time="Fri Nov 13 13:43:01 EST 2015">/Users/michaeltoth/Documents/tddmaze/maze.py</file_saved>
+</file_created>
+<command_run time="Fri Nov 13 13:43:19 EST 2015">m.travel2BranchOrWall()></command_run>
+<menu_button time="Fri Nov 13 13:44:45 EST 2015">Load Program</menu_button>
+<file_saved time="Fri Nov 13 13:44:47 EST 2015">/Users/michaeltoth/Documents/tddmaze/maze.py</file_saved>
+</file_created>
+<menu_button time="Fri Nov 13 13:51:22 EST 2015">Load Program</menu_button>
+<file_saved time="Fri Nov 13 13:51:24 EST 2015">/Users/michaeltoth/Documents/tddmaze/maze.py</file_saved>
+</file_created>
+<menu_button time="Fri Nov 13 13:53:00 EST 2015">Load Program</menu_button>
+<file_saved time="Fri Nov 13 13:53:01 EST 2015">/Users/michaeltoth/Documents/tddmaze/maze.py</file_saved>
+</file_created>
+<menu_button time="Fri Nov 13 14:51:01 EST 2015">Load Program</menu_button>
+<file_saved time="Fri Nov 13 14:51:02 EST 2015">/Users/michaeltoth/Documents/tddmaze/maze.py</file_saved>
 </file_created>

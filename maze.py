@@ -19,15 +19,15 @@ class Maze(object):
     moveTo(self.t,30,190)
     self.t.setHeading(90)
     
-  def colorInFront(self):
+  def colorInFront(self,d=20):
     if getHeading(self.t) == 90: # pointing EAST
-      px=getPixelAt(self.image,self.t.getXPos()+20, self.t.getYPos())
+      px=getPixelAt(self.image,self.t.getXPos()+d, self.t.getYPos())
     if getHeading(self.t) == 180: # pointing SOUTH
-      px=getPixelAt(self.image,self.t.getXPos(), self.t.getYPos()+20)     
-    if getHeading(self.t) == 270: # pointing WEST
-      px=getPixelAt(self.image,self.t.getXPos()-20, self.t.getYPos())
+      px=getPixelAt(self.image,self.t.getXPos(), self.t.getYPos()+d)     
+    if (getHeading(self.t) == 270) or (getHeading(self.t) == -90): # pointing WEST
+      px=getPixelAt(self.image,self.t.getXPos()-d, self.t.getYPos())
     if getHeading(self.t) == 0: # pointing SOUTH
-      px=getPixelAt(self.image,self.t.getXPos(), self.t.getYPos()-20)     
+      px=getPixelAt(self.image,self.t.getXPos(), self.t.getYPos()-d)     
     c = getColor(px)
     if distance(c,white) < 150: 
       return white
@@ -49,23 +49,25 @@ class Maze(object):
       turn(self.t,180)
       l=self.colorInFront()
       turn(self.t,90) 
-      if r==white or l==white:
+      if r==white or l==white or r==green or l==green:
         if starting:
           starting=false
-          self.forwardWithDraw(self.t,10)
+          self.forwardWithDraw(self.t,12)
         else:
-          starting=false
+          self.forwardWithDraw(self.t,2)
           while getXPos(self.t)%10!=0 or getYPos(self.t)%10!=0:
             self.forwardWithDraw(self.t,1)
           return
       else:
         starting = false
         self.forwardWithDraw(self.t,1)
-    self.forwardWithDraw(self.t,11)
+    self.forwardWithDraw(self.t,2)
+    while getXPos(self.t)%10!=0 or getYPos(self.t)%10!=0:
+      self.forwardWithDraw(self.t,1)
     
   def forwardWithDraw(self,t,d):
     for i in range(d):
-      if self.colorInFront()==green:
+      if self.colorInFront(1)==green:
         x=getXPos(t); y=getYPos(t); addOvalFilled(self.image,x-10,y-10,20,20,red)
       else:      
         x=getXPos(t); y=getYPos(t); addOvalFilled(self.image,x-10,y-10,20,20,green)
@@ -75,20 +77,23 @@ class Maze(object):
     if self.colorInFront()==yellow:
       return True
     else:
-      if self.colorInFront() == white or self.colorInFront() == green: 
-        self.travel2BranchOrWall()
-        return self.solve()
-      else:
+      
+      saveX=self.t.getXPos()
+      saveY=self.t.getYPos()
+      saveH=self.t.getHeading()
+      
+      print "solving at " + str(saveX) + "," + str(saveY)
+      turn(self.t,-90) # face left from the direction we were going
+      for i in range(3):
+        if self.colorInFront()==white:
+          self.travel2BranchOrWall()
+          if self.solve():
+            return true
         turn(self.t,90)
-        if self.colorInFront() == white or self.colorInFront() == green: 
-          return self.solve()
-        else:
-          turn(self.t,90)
-          if self.colorInFront() == white or self.colorInFront() == green: 
-            return self.solve()
-          else: 
-            return False
-            
+      print "going back to " + str(saveX) + "," + str(saveY)
+      turnToFace(self.t,saveX,saveY)
+      self.forwardWithDraw(self.t,int(sqrt((self.t.getXPos())**2+(self.t.getYPos())**2)))
+      self.t.setHeading(saveH)
       return False
       
     
@@ -157,64 +162,41 @@ if true:
   m.t.setHeading(90)
   assert m.colorInFront() == red
   
+  printNow("Testing next to gold")
   m.reset()
   moveTo(m.t,390,150) # put the turtle next to the gold
   m.t.setHeading(180)
   assert m.solve()
   
+  printNow("Testing farther from gold")
   m.reset()
   moveTo(m.t,390,120) # put the turtle farther from the gold
   m.t.setHeading(180)
   assert m.solve()
   
+  
+  printNow("Testing second to last path")
   m.reset()
-  moveTo(m.t,390,120) # put the turtle farther from the gold
-  m.t.setHeading(90)  # face a wall
-  assert m.solve()
-  
-  
-  m.reset()
-  moveTo(m.t,390,120) # put the turtle farther from the gold
-  m.t.setHeading(0)  # face north
-  assert m.solve()
-  
-  
-  m.reset()
-  moveTo(m.t,390,30) # put the turtle on the last path
+  moveTo(m.t,350,110) # put the turtle on the last path
   m.t.setHeading(180)  # face south
   # m.travel2BranchOrWall()
   # assert m.solve()
-  foundBranch=false
-  while not foundBranch and (m.colorInFront() == white or self.colorInFront() == green):
-    turn(m.t,90)
-    r=m.colorInFront()
-    turn(m.t,180)
-    l=m.colorInFront()
-    turn(m.t,90) 
-    if r==white or l==white:
-      foundBranch=true
-      while getXPos(m.t)%10!=0 or getYPos(m.t)%10!=0:
-        m.forwardWithDraw(m.t,1)
-    else:
-      m.forwardWithDraw(m.t,1)
-  
-  
-  # m.reset()
-  # moveTo(m.t,390,30) # put the turtle on the last path
-  # m.t.setHeading(180)  # face south
-  # assert m.solve()
-  
-  m.reset()
-  moveTo(m.t,350,30)
-  m.t.setHeading(180)
   m.travel2BranchOrWall()
-  assert m.t.getYPos()==70
-  
-  m.travel2BranchOrWall() 
   assert m.t.getYPos()==150
-  
   m.travel2BranchOrWall()
   assert m.t.getYPos()==270
   
-  
-  
+  m.reset()
+  moveTo(m.t,150,230) # put the turtle on the isolated path
+  m.t.setHeading(0)  # face north
+  m.travel2BranchOrWall()
+  turn(m.t,90)
+  m.travel2BranchOrWall()
+  turn(m.t,90)
+  m.travel2BranchOrWall()
+  turn(m.t,-90)
+  m.travel2BranchOrWall()
+  turn(m.t,-90)
+  m.travel2BranchOrWall()
+  turn(m.t,180)
+ 
