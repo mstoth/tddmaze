@@ -20,9 +20,10 @@ class Maze(object):
     self.t.setHeading(90)
     
   def colorInFront(self,d=20):
-    if getHeading(self.t) == 90: # pointing EAST
+    assert getHeading(self.t)%90==0
+    if getHeading(self.t) == 90 or getHeading(self.t)==-270: # pointing EAST
       px=getPixelAt(self.image,self.t.getXPos()+d, self.t.getYPos())
-    if getHeading(self.t) == 180: # pointing SOUTH
+    if getHeading(self.t) == 180 or getHeading(self.t)==-180: # pointing SOUTH
       px=getPixelAt(self.image,self.t.getXPos(), self.t.getYPos()+d)     
     if (getHeading(self.t) == 270) or (getHeading(self.t) == -90): # pointing WEST
       px=getPixelAt(self.image,self.t.getXPos()-d, self.t.getYPos())
@@ -30,7 +31,7 @@ class Maze(object):
       px=getPixelAt(self.image,self.t.getXPos(), self.t.getYPos()-d)     
     c = getColor(px)
     if distance(c,white) < 150: 
-      return white
+      return white  
     if distance(c,blue) < 150: 
       return blue
     if distance(c,red) < 150: 
@@ -67,7 +68,7 @@ class Maze(object):
     
   def forwardWithDraw(self,t,d):
     for i in range(d):
-      if self.colorInFront(1)==green:
+      if self.colorInFront(10)==green:
         x=getXPos(t); y=getYPos(t); addOvalFilled(self.image,x-10,y-10,20,20,red)
       else:      
         x=getXPos(t); y=getYPos(t); addOvalFilled(self.image,x-10,y-10,20,20,green)
@@ -78,22 +79,24 @@ class Maze(object):
       return True
     else:
       
-      saveX=self.t.getXPos()
-      saveY=self.t.getYPos()
-      saveH=self.t.getHeading()
-      
-      print "solving at " + str(saveX) + "," + str(saveY)
+
+      assert self.t.getHeading()%90==0
       turn(self.t,-90) # face left from the direction we were going
       for i in range(3):
-        if self.colorInFront()==white:
+        if self.colorInFront()==white or self.colorInFront()==green:
+          print("trying in direction " + str(getHeading(self.t)))
+          saveX=self.t.getXPos()
+          saveY=self.t.getYPos()
+          saveH=self.t.getHeading()
           self.travel2BranchOrWall()
+          print("calling solve from " + str(getXPos(self.t)) + "," + str(getYPos(self.t)))
           if self.solve():
             return true
+          turnToFace(self.t,saveX,saveY)
+          if self.colorInFront()==white or self.colorInFront()==green:
+            self.forwardWithDraw(self.t,int(sqrt((self.t.getXPos()-saveX)**2+(self.t.getYPos()-saveY)**2)))
+            self.t.setHeading(saveH)
         turn(self.t,90)
-      print "going back to " + str(saveX) + "," + str(saveY)
-      turnToFace(self.t,saveX,saveY)
-      self.forwardWithDraw(self.t,int(sqrt((self.t.getXPos())**2+(self.t.getYPos())**2)))
-      self.t.setHeading(saveH)
       return False
       
     
@@ -199,4 +202,12 @@ if true:
   turn(m.t,-90)
   m.travel2BranchOrWall()
   turn(m.t,180)
- 
+  m.travel2BranchOrWall()
+  m.solve()
+  
+
+  #m.reset()
+  #moveTo(m.t,150,230) # put the turtle on the isolated path
+  #m.t.setHeading(0)  # face north
+  #m.solve()
+
